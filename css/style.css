@@ -131,16 +131,30 @@ img {
 /* Desktop-First */
 
 /* DESKTOP */
-@media screen and (min-width: 992px) {
-    
+@media screen and (max-width: 992px) {
+    .container {
+        width: 100%;
+    }
 }
 
 /* TABLET */
-@media screen and (min-width: 768px) {
-    
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
 }
 
 /* MOBILE PICCOLO */
-@media screen and (min-width: 576px) {
+@media screen and (max-width: 576px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
+    .row .col {
+        width: 100%;
+        margin-bottom: 50px;
+    }
 }
